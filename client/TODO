@@ -1,0 +1,18 @@
+1. Title Component
+
+2. Todo Component
+    a. Add new Task Button
+    b. Input
+    c. Label
+
+3. List Data Component
+    a. Checkbox
+    b. Task Name
+    c. Delete Button
+    d. Add Subtask (TODO Component) Reusable
+
+4. Conditional Rendering
+    a. If task, List the task
+    b. else, "No Subtasks Found..." alert
+
+5. Notification Popup

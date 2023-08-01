@@ -5,7 +5,6 @@ const todoController = require("./todo.controller");
 //Read
 router.get("/", async (req, res) => {
   const results = await todoController.list();
-  res.send("TODO API running");
 });
 
 // Create
