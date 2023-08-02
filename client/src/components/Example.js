@@ -44,19 +44,43 @@
 
 // export default Car;
 
-function Goal(props) {
-  const isGoal = props.isGoal;
-  return( <>
-    {isGoal?<MadeGoal/>: <MissedGoal/>}
-  </>
+//  Ternary Operator
+
+// function Goal(props) {
+//   const isGoal = props.isGoal;
+//   return( <>
+//     {isGoal?<MadeGoal/>: <MissedGoal/>}
+//   </>
+//   );
+// };
+
+// function MadeGoal() {
+//   return <h1>Goal!!</h1>;
+// }
+// function MissedGoal() {
+//   return <h1>MISSED!</h1>;
+// }
+
+// export default Goal
+
+// List
+
+function Garage() {
+  const cars = ["Ford", "Audi", " Toyota"];
+  return (
+    <>
+      <h1>Who lives in my garage?</h1>
+      <ul>
+        {cars.map((car) => {
+          return <Car brand={car} />;
+        })}
+      </ul>
+    </>
   );
-};
-
-function MadeGoal() {
-  return <h1>Goal!!</h1>;
-}
-function MissedGoal() {
-  return <h1>MISSED!</h1>;
 }
 
-export default Goal
+function Car(props) {
+  return <li>I am a {props.brand}</li>;
+}
+
+export default Garage;
