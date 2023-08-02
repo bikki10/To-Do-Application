@@ -1,12 +1,12 @@
 import Title from "./components/Title";
-import Example from "./components/Example";
+import Hooks from "./components/Hooks";
 
 function App() {
   return (
     <>
       <>
         <Title name="TODO App" />
-        <Example Car />
+        <Hooks FavColor />
       </>
     </>
   );
