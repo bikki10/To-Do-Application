@@ -32,17 +32,17 @@
 
 // Logical && operator
 
-// function Car(props) {
-//   const cars = props.Car;
-//   return (
-//     <>
-//       <h1>Garage</h1>
-//       {cars.length > 0 && <h2>You have {cars.length} cars in your garage.</h2>}
-//     </>
-//   );
-// }
+function Car(props) {
+  const cars = ["a", "b", "c"];
+  return (
+    <>
+      <h1>Garage</h1>
+      {cars.length > 0 && <h2>You have {cars.length} cars in your garage.</h2>}
+    </>
+  );
+}
 
-// export default Car;
+export default Car;
 
 //  Ternary Operator
 
@@ -65,22 +65,22 @@
 
 // List
 
-function Garage() {
-  const cars = ["Ford", "Audi", " Toyota"];
-  return (
-    <>
-      <h1>Who lives in my garage?</h1>
-      <ul>
-        {cars.map((car) => {
-          return <Car brand={car} />;
-        })}
-      </ul>
-    </>
-  );
-}
+// function Garage() {
+//   const cars = ["Ford", "Audi", " Toyota"];
+//   return (
+//     <>
+//       <h1>Who lives in my garage?</h1>
+//       <ul>
+//         {cars.map((car) => {
+//           return <Car brand={car} />;
+//         })}
+//       </ul>
+//     </>
+//   );
+// }
 
-function Car(props) {
-  return <li>I am a {props.brand}</li>;
-}
+// function Car(props) {
+//   return <li>I am a {props.brand}</li>;
+// }
 
-export default Garage;
+// export default Garage;
